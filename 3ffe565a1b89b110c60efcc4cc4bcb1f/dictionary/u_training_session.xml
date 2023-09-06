@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d1d2ae1e1b89b110c60efcc4cc4bcb36" label="Training Session" max_length="40" name="u_training_session" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Trainer Name" max_length="40" name="u_trainer_name" type="string"/>
+        <element label="Training Duration" max_length="40" name="u_training_duration" type="integer"/>
+        <element label="Training ID" max_length="40" name="u_training_id" type="integer"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

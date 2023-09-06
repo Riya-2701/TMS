@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="daafd69a1b89b110c60efcc4cc4bcb68" label="Courses" max_length="40" name="u_courses" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Course Duration" max_length="40" name="u_course_duration" type="integer"/>
+        <element label="Course ID" max_length="40" name="u_course_id" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Course Name" max_length="40" name="u_course_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
